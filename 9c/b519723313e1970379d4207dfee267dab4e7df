@@ -1,0 +1,26 @@
+.github/workflows/tests.yml
+  h_75d26f28339534 1-19
+.gitignore
+  h_75d26f28339534 1
+README.md
+  h_75d26f28339534 1-9
+package-lock.json
+  h_75d26f28339534 1-1479
+package.json
+  h_75d26f28339534 1-11
+src/cart.js
+  h_75d26f28339534 1-7
+src/cart.test.js
+  h_75d26f28339534 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9cb519723313e1970379d4207dfee267dab4e7df",
+  "prompts": {},
+  "humans": {
+    "h_75d26f28339534": {
+      "author": "Shayki Abramczyk <shayki5@gmail.com>"
+    }
+  }
+}
