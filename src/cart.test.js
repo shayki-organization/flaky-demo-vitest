@@ -34,6 +34,13 @@ describe('cart flaky', () => {
     expect(applyDiscount(100, 25)).toBe(75);
   });
 
+  it('flaky: fails on first attempt only', () => {
+    if (process.env.GITHUB_RUN_ATTEMPT === '1') {
+      throw new Error('flaky: simulated first-attempt failure (GITHUB_RUN_ATTEMPT=1)');
+    }
+    expect(total([{ price: 5, qty: 4 }])).toBe(20);
+  });
+
   it('flaky: handles empty cart under race', () => {
     if (Math.random() < 0.4) {
       throw new Error('flaky: simulated race reading cart');
